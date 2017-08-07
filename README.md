@@ -1,0 +1,2 @@
+# C#-Project--Library-Management-System-
+A desktop app to keep track of books, readers, suppliers, employees and borrow history of a whole library. Readers can register and by login they can borrow book. I use C# as a programming language and Microsoft Visual Studio 2013 as IDE to finish this project. This project is done by MySQL as database. Also use XAMPP as local server and SQL as query language.
