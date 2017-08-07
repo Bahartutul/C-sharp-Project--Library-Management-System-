@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D1A3F06-5D1C-4237-ADE4-65BE77E62F51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library-Management-System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borror_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borror_Details.Designer.cs">
+      <DependentUpon>Borror_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow.Designer.cs">
+      <DependentUpon>Borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_details.Designer.cs">
+      <DependentUpon>Employee_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fpage.Designer.cs">
+      <DependentUpon>Fpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password_Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password_Change.Designer.cs">
+      <DependentUpon>Password_Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pcorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pcorrection.Designer.cs">
+      <DependentUpon>Pcorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Add_Delete_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Delete_Update.Designer.cs">
+      <DependentUpon>Add_Delete_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sing_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sing_Up.Designer.cs">
+      <DependentUpon>Sing_Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userhome.Designer.cs">
+      <DependentUpon>userhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_pcorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_pcorrection.Designer.cs">
+      <DependentUpon>user_pcorrection.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Borror_Details.resx">
+      <DependentUpon>Borror_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow.resx">
+      <DependentUpon>Borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_details.resx">
+      <DependentUpon>Employee_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fpage.resx">
+      <DependentUpon>Fpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password_Change.resx">
+      <DependentUpon>Password_Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pcorrection.resx">
+      <DependentUpon>Pcorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Add_Delete_Update.resx">
+      <DependentUpon>Add_Delete_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sing_Up.resx">
+      <DependentUpon>Sing_Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userhome.resx">
+      <DependentUpon>userhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_pcorrection.resx">
+      <DependentUpon>user_pcorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Library-clipart-clipart.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manager-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ppelogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
